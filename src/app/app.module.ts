@@ -8,7 +8,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { MeComponent } from './components/me/me.component';
-import { ProComponent } from './components/pro/pro.component';
+import { ProListComponent } from './components/pro/pro-list/pro-list.component';
+import { ProDetailComponent } from './components/pro/pro-detail/pro-detail.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProComponent } from './components/pro/pro.component';
     NavbarComponent,
     LandingComponent,
     MeComponent,
-    ProComponent,
+    ProListComponent,
+    ProDetailComponent,
   ],
   imports: [
     BrowserModule,
