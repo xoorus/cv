@@ -8,8 +8,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { MeComponent } from './components/me/me.component';
-import { ProListComponent } from './components/pro/pro-list/pro-list.component';
-import { ProDetailComponent } from './components/pro/pro-detail/pro-detail.component';
+import { ExperiencesProComponent } from './components/pro/experiences-pro/experiences-pro.component';
+import { ExperienceProDetailComponent } from './components/pro/experience-pro-detail/experience-pro-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +19,8 @@ import { ProDetailComponent } from './components/pro/pro-detail/pro-detail.compo
     NavbarComponent,
     LandingComponent,
     MeComponent,
-    ProListComponent,
-    ProDetailComponent,
+    ExperiencesProComponent,
+    ExperienceProDetailComponent,
   ],
   imports: [
     BrowserModule,
