@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { MeComponent } from './components/me/me.component';
+import { ProComponent } from './components/pro/pro.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MeComponent } from './components/me/me.component';
     NavbarComponent,
     LandingComponent,
     MeComponent,
+    ProComponent,
   ],
   imports: [
     BrowserModule,
