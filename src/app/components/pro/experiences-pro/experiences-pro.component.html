@@ -2,26 +2,22 @@
 
 
 <div class="container-fluid bluebg">
-    <div class="row justify-content-center h-100 align-items-center" *ngFor="let experiencePro of experiencesPro">
+    <div class="row justify-content-center lign-items-center" *ngFor="let experiencePro of experiencesPro">
         <div class="separator">
-            <div class="border"></div>
-        </div>
-        <div class="col-2">
-        </div>
-        <div class="col-1">
-            <div style="height:30px;width:100px;background:red">
-
-            </div>
-        </div>
-        <div class="col-3" >
-            <b>{{experiencePro.company}}</b><br>
-            {{experiencePro.location}}<br>
-            {{experiencePro.dateStart}} - {{experiencePro.dateEnd}}
-        </div>
-        <div class="col-1">
+            <div class="border half-width"></div>
         </div>
         <div class="col-3">
-            {{experiencePro.desc}}
+        </div>
+        <div class="col-2" >
+            <b>{{experiencePro.company}}</b><br>
+            {{experiencePro.dateStart}} - {{experiencePro.dateEnd}}<br>
+            {{experiencePro.location}}<br><br>
+            <img src={{experiencePro.countryLogo}}><br>
+        </div>
+        <div class="col-5">
+            <h2> <u>{{experiencePro.name | uppercase}} </u></h2><br>       
+            <p [innerHTML]="experiencePro.desc"> </p>
+            <img src={{experiencePro.logo}} class="right">
         </div>
         <div class="col-2">
         </div>

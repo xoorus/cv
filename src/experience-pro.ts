@@ -7,4 +7,5 @@ export class ExperiencePro {
     location: string;
     dateStart: string;
     dateEnd: string;
+    countryLogo: string;
   }
