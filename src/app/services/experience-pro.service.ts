@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ExperiencePro } from 'src/experience-pro';
+import { ExperiencePro } from 'src/objects/experience-pro';
 import { EXPERIENCES_PRO } from 'src/mock-experiences-pro';
 import { Observable, of } from 'rxjs';
 

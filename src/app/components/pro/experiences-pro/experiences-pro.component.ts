@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ExperiencePro } from 'src/experience-pro';
+import { ExperiencePro } from 'src/objects/experience-pro';
 import { ExperienceProService } from '../../../services/experience-pro.service';
 
 @Component({
