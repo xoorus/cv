@@ -10,6 +10,7 @@ import { LandingComponent } from './components/landing/landing.component';
 import { MeComponent } from './components/me/me.component';
 import { ExperiencesProComponent } from './components/pro/experiences-pro/experiences-pro.component';
 import { ExperienceProDetailComponent } from './components/pro/experience-pro-detail/experience-pro-detail.component';
+import { EducationComponent } from './components/education/education.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ExperienceProDetailComponent } from './components/pro/experience-pro-de
     MeComponent,
     ExperiencesProComponent,
     ExperienceProDetailComponent,
+    EducationComponent,
   ],
   imports: [
     BrowserModule,
