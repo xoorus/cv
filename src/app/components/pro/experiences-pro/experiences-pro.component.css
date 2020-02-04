@@ -3,7 +3,7 @@
     margin-top:30px;
 }
 .border {
-    border: 1px solid #dee2e6!important;
+    border: 1px solid #025c6c!important;
     margin-bottom: 30px;
 }   
 .half-width{
@@ -16,4 +16,7 @@ img {
 
 .right{
     float:right;
+}
+.title{
+    color: #025c6c;
 }

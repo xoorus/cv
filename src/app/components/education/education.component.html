@@ -1,7 +1,8 @@
 
 
 
-<div class="container-fluid greybg">
+<div class="container-fluid bluebg">
+    <div class="title">Diplômes</div>
     <div class="row justify-content-center lign-items-center" *ngFor="let education of educationList">
         <div class="separator">
             <div class="border half-width"></div>
@@ -9,19 +10,18 @@
         <div class="col-3">
         </div>
         <div class="col-2" >
-            <b>{{education.deliveredBy}}</b><br>
+            <div class="full-width"><b>{{education.deliveredBy}}</b></div>
             <img src={{education.logo}} class="right">
-            {{education.dateStart}}
-            {{education.location}}<br><br>
+            <div class="full-width">{{education.dateStart}}</div>
+            <div class="full-width">{{education.location}}</div>
         </div>
         <div class="col-5">
-            <i class="fa {{education.icon}}" aria-hidden="true"> </i><h3> {{education.name | uppercase}} </h3><br>       
+            <i class="fa {{education.icon}}" aria-hidden="true"> </i><h3 style="margin-left:60px;"> {{education.name | uppercase}} </h3><br>       
             <p [innerHTML]="education.desc"> </p>
         </div>
         <div class="col-2">
         </div>
     </div>
-    <div class="separator">
-        <div class="border half-width"></div>
-    </div>
+    
+    <div class="last-component"></div>
 </div>

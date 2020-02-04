@@ -21,3 +21,15 @@ html, body
     background-color:#025c6c;
     color:white;
 }
+.title{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    padding-top: 45px;
+    padding-bottom: 15px;
+}
+.last-component{
+    padding-bottom:45px;
+    width:100%;
+}
