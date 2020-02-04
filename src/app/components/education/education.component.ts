@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Education } from 'src/objects/education';
 import { EducationService } from 'src/app/services/education.service';
 
+
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',

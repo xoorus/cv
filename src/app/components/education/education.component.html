@@ -15,8 +15,7 @@
             {{education.location}}<br><br>
         </div>
         <div class="col-5">
-            
-            <img src={{education.icon}}><h2> <u>{{education.name | uppercase}} </u></h2><br>       
+            <i class="fa {{education.icon}}" aria-hidden="true"> </i><h3> {{education.name | uppercase}} </h3><br>       
             <p [innerHTML]="education.desc"> </p>
         </div>
         <div class="col-2">
