@@ -14,6 +14,7 @@ import { ExperiencesProComponent } from './components/pro/experiences-pro/experi
 import { ExperienceProDetailComponent } from './components/pro/experience-pro-detail/experience-pro-detail.component';
 import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { HobbiesComponent } from './components/hobbies/hobbies.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { SkillsComponent } from './components/skills/skills.component';
     ExperienceProDetailComponent,
     EducationComponent,
     SkillsComponent,
+    HobbiesComponent,
   ],
   imports: [
     BrowserModule,
