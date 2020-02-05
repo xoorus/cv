@@ -1,21 +1,36 @@
 <div class="container-fluid greybg">
     <div class="title">Hobbies / Centres d'intérêt</div>
-    <div class="row justify-content-center lign-items-center" *ngFor="let hobby of hobbies">
-        <div class="separator">
-            <div class="border half-width"></div>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="row justify-content-center lign-items-center" *ngFor="let hobby of hobbyListLeft">
+                <div class="col-5">
+                </div>
+                <div class="col-1 align-items-center text-center" >
+                    <i class="fa {{hobby.icon}}" aria-hidden="true"> </i>
+                </div>
+                <div class="col-6 align-items-center">
+                    <h4>{{hobby.name}}</h4>    
+                    <p [innerHTML]="hobby.desc"> </p>
+                </div>
+            </div>
         </div>
-        <div class="col-3">
-        </div>
-        <div class="col-1" >
-            <img src={{hobby.logo}} class="right">
-        </div>
-        <div class="col-5">
-            <h2> <u>{{hobby.name}} </u></h2><br>       
-            <p [innerHTML]="hobby.desc"> </p>
-        </div>
-        <div class="col-3">
+
+        <div class="col-6">
+            <div class="row justify-content-center lign-items-center" *ngFor="let hobby of hobbyListRight">
+                <div class="col-1">
+                </div>
+                <div class="col-1 align-items-center text-center" >
+                    <i class="fa {{hobby.icon}}" aria-hidden="true"> </i>
+                </div>
+                <div class="col-9 align-items-center">
+                    <h4>{{hobby.name}}</h4>    
+                    <p [innerHTML]="hobby.desc"> </p>
+                </div>
+            </div>
         </div>
     </div>
+
 
     <div class="last-component"></div>
 </div>
