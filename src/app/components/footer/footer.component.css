@@ -1,0 +1,30 @@
+i{
+    font-size: 30px;
+    color: #025c6c;
+}
+.row{
+    margin-top:20px;
+    margin-bottom:40px;
+}
+#in{
+    animation: bounce 2.7s ease infinite;
+    position: absolute;
+}
+#trello{
+    animation: bounce 2.9s ease infinite;
+    position: absolute;
+}
+#git{
+    animation: bounce 3.1s ease infinite;
+    position: absolute;
+}
+#flickr{
+    animation: bounce 3.3s ease infinite;
+    position: absolute;
+}
+
+@keyframes bounce{
+    from {margin-top: 0px;}
+    50%  {margin-top: -15px;}
+    to   {margin-top: 0px;}
+}

@@ -27,14 +27,14 @@ h2{
 .badge-light{
     color: #212529;
     background-color: #f8f9fa;
-    height: 55px;
+    height: 70px;
     padding-right: 15px;
     padding-left: 15px;
-    margin-right: 15px;
+    margin-right: 25px;
 }
 .badge{
-    font-size:85%;
-    padding-top: 10px;
+    font-size:100%;
+    padding-top: 15px;
     font-weight: normal;
 }
 .score {
@@ -42,4 +42,7 @@ h2{
     font-size:120%;
     font-weight: 700;
     color: #025c6c;
+}
+.row{
+    margin-bottom:30px;
 }
