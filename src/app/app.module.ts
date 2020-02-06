@@ -15,6 +15,7 @@ import { ExperienceProDetailComponent } from './components/pro/experience-pro-de
 import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { HobbiesComponent } from './components/hobbies/hobbies.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HobbiesComponent } from './components/hobbies/hobbies.component';
     EducationComponent,
     SkillsComponent,
     HobbiesComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
