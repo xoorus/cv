@@ -7,19 +7,19 @@
         <div class="separator">
             <div class="border half-width"></div>
         </div>
-        <div class="col-xl-3 col-md-1  col-sm-0 col-xs-0">
+        <div class="col-xl-3 col-md-1  col-sm-0 ">
         </div>
-        <div class="col-xl-2 col-md-2 col-sm-3 col-xs-0" >
+        <div class="col-xl-2 col-md-2 col-sm-3  col-sm-0 " >
             <div class="full-width"><b>{{education.deliveredBy}}</b></div>
             <img src={{education.logo}} class="right">
             <div class="full-width">{{education.dateStart}}</div>
             <div class="full-width">{{education.location}}</div>
         </div>
         <div class="col-xl-5 col-md-8 col-sm-12">
-            <i class="fa {{education.icon}}" aria-hidden="true"> </i><h3 style="margin-left:60px;"> {{education.name | uppercase}} </h3><br>       
+            <i class="fa {{education.icon}}" aria-hidden="true"> </i><h3 class="text-sm-center" style="margin-left:60px;"> {{education.name | uppercase}} </h3><br>       
             <p [innerHTML]="education.desc" class="text-sm-center"> </p>
         </div>
-        <div class="col-xl-2 col-md-1 col-sm-0 col-xs-0">
+        <div class="col-xl-2 col-md-1 col-sm-0">
         </div>
     </div>
     

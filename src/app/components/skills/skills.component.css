@@ -31,7 +31,17 @@ h2{
     padding-right: 15px;
     padding-left: 15px;
     margin-right: 25px;
+    margin-bottom: 15px;
 }
+
+@media (max-width: 767px) {
+
+    .badge-light {
+      width:40%;
+      margin-right: 5%;
+      margin-left: 5%;
+    } 
+  }
 .badge{
     font-size:100%;
     padding-top: 15px;
