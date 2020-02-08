@@ -1,5 +1,13 @@
 .profil-pic{
     vertical-align: middle;
     border-style: none;
-    width: 80%;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
+@media screen and (max-width: 980px) {
+    .profil-pic {
+        width: 350px;
+    }
+  }
