@@ -4,6 +4,9 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 
 import { AppRoutingModule } from './app-routing.module';
+import { ScrollService } from './services/scroll.service';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { NgxScrollspyModule } from '@uniprank/ngx-scrollspy';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -35,6 +38,8 @@ import { ContactComponent } from './components/contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgxScrollspyModule.forRoot(),
+    ScrollToModule.forRoot(),
     AngularFontAwesomeModule
   ],
   providers: [],

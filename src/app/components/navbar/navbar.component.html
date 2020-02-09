@@ -1,21 +1,18 @@
 <div class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container d-flex justify-content-between">
-        <a href="#" class="navbar-brand d-flex align-items-center">
+        <a href="#" class="navbar-brand d-flex align-items-center" [ngx-scroll-to]="'#section-profile'" [ngClass]="scrollElement === 'section-profile' ? 'active' : ''">
           Qui suis-je
         </a>
-        <a href="#" class="navbar-brand d-flex align-items-center">
+        <a href="#" class="navbar-brand d-flex align-items-center" [ngx-scroll-to]="'#section-education'" [ngClass]="scrollElement === 'section-education' ? 'active' : ''">
           Diplômes / certifications
         </a>
-        <a href="#" class="navbar-brand d-flex align-items-center">
+        <a href="#" class="navbar-brand d-flex align-items-center" [ngx-scroll-to]="'#section-pro'" [ngClass]="scrollElement === 'section-pro' ? 'active' : ''">
           Expériences pro.
         </a>
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          Expériences perso.
-        </a>
-        <a href="#" class="navbar-brand d-flex align-items-center">
+        <a href="#" class="navbar-brand d-flex align-items-center" [ngx-scroll-to]="'#section-skills'" [ngClass]="scrollElement === 'section-skills' ? 'active' : ''">
           Compétences
         </a>
-        <a href="#" class="navbar-brand d-flex align-items-center">
+        <a href="#" class="navbar-brand d-flex align-items-center" [ngx-scroll-to]="'#section-hobbies'" [ngClass]="scrollElement === 'section-hobbies' ? 'active' : ''">
           Hobbies
         </a>
     </div>

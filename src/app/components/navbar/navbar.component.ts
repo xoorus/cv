@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollService } from '../../services/scroll.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public scrollService: ScrollService) { }
+
+  scrollElement = null;
 
   ngOnInit() {
+    this.scrollService.scrollSection.subscribe((value) => {
+      this.scrollElement = value;
+    });
   }
 
 }
