@@ -5,17 +5,19 @@ let express = require('express'),
    bodyParser = require('body-parser'),
    dbConfig = require('./database/db');
 
-// Connecting with mongo db
-mongoose.Promise = global.Promise;
-mongoose.connect(dbConfig.db, {
-   useNewUrlParser: true
-}).then(() => {
-      console.log('Database sucessfully connected')
-   },
-   error => {
-      console.log('Database could not connected: ' + error)
-   }
-)
+   let mongoose = require('mongoose');
+
+   // Connecting with mongo db
+   mongoose.Promise = global.Promise;
+   mongoose.connect(dbConfig.db, {
+      useNewUrlParser: true
+   }).then(() => {
+         console.log('Database sucessfully connected')
+      },
+      error => {
+         console.log('Database could not connected: ' + error)
+      }
+   )
 
 // Setting up port with express js
 const employeeRoute = require('../backend/routes/employee.route')
