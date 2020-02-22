@@ -1,10 +1,10 @@
-<div class="navbar navbar-dark bg-dark shadow-sm">
+<div class="navbar navbar-dark navbar-wide bg-dark shadow-sm">
     <div class="container d-flex justify-content-between">
         <a href="#" class="navbar-brand d-flex align-items-center" [ngx-scroll-to]="'#section-profile'" [ngClass]="scrollElement === 'section-profile' ? 'active' : ''">
           Qui suis-je
         </a>
         <a href="#" class="navbar-brand d-flex align-items-center" [ngx-scroll-to]="'#section-education'" [ngClass]="scrollElement === 'section-education' ? 'active' : ''">
-          Diplômes / certifications
+          Diplômes
         </a>
         <a href="#" class="navbar-brand d-flex align-items-center" [ngx-scroll-to]="'#section-pro'" [ngClass]="scrollElement === 'section-pro' ? 'active' : ''">
           Expériences pro.
@@ -17,3 +17,24 @@
         </a>
     </div>
   </div>
+
+  <script>
+    angular.module('navbar', [])
+    .controller('myCtrl', ['$scope', function($scope) {
+        $scope.count = 0;
+        $scope.openNav = function() {
+          document.getElementById("mySidenav").style.width = "250px";
+        };
+    }]);
+    </script>
+
+<div ng-controller="myCtrl">
+<span style="font-size:30px;cursor:pointer"  ng-click="openNav()">&#9776; open</span>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn"  ng-click="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>

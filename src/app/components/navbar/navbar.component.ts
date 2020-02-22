@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ScrollService } from '../../services/scroll.service';
+declare function openNav: any;
 
 @Component({
   selector: 'app-navbar',
@@ -17,5 +18,4 @@ export class NavbarComponent implements OnInit {
       this.scrollElement = value;
     });
   }
-
 }
